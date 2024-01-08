@@ -1,0 +1,50 @@
+* {
+    display: block;
+}
+
+body {
+    background-color: rgb(49, 11, 11);
+}
+
+.window {
+    margin: auto;
+    background-image: url("img/biuro1.png");
+    width: 1024px;
+    height: 600px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.door {
+    width: 250px;
+    height: 600px;
+    float: left;
+}
+
+.door:hover {
+    background-image: url("img/korytarz1.jpg");
+}
+
+.wall {
+    float: left;
+    height: 600px;
+    width: 387px;
+}
+
+.wall1 {
+    float: left;
+    height: 188px;
+    width: 385px;
+}
+
+.computer {
+    float: left;
+    height: 412px;
+    width: 385px;
+}
+
+.computer:hover {
+    background-image: url("img/minitor.jpg");
+}
