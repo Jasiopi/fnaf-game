@@ -9,15 +9,34 @@
 </head>
 
 <body>
-    <div class="window">
+    <div class="window" id="window1">
         <div class="door"></div>
         <div class="wall"></div>
         <div class="wall1"></div>
-        <div class="computer"></div>
+        <div class="computer" onclick="monit()"></div>
+    </div>
+    <div class="window_cam" id="window2">
+        
+        <img src="img/hall1.jpg" alt="hall1">
+        <div class="cam_panel">
+            <div class="camer">
+                cam_1
+            </div>
+            <div class="camer">
+                cam_2
+            </div>
+        </div>
+        <div class="map">
+            <img src="img/map_1.png" alt="map">
+        </div>
+        <div class="exit" onclick="Back_to_room()">
+            exit
+        </div>
+        
     </div>
     <audio autoplay loop>
         <source src="lamp-buzz-6132.mp3" type="audio/mpeg">
     </audio>
 </body>
-
+<script src="camers.Js"></script>
 </html>

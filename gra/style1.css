@@ -1,5 +1,5 @@
 * {
-    display: block;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,6 +9,18 @@ body {
 .window {
     margin: auto;
     background-image: url("img/biuro1.png");
+    width: 1024px;
+    height: 600px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.window_cam{
+    display: none;
+    margin: auto;
+    background-color: black;
     width: 1024px;
     height: 600px;
     text-align: center;
@@ -47,4 +59,55 @@ body {
 
 .computer:hover {
     background-image: url("img/minitor.jpg");
+}
+
+div img{
+    width: 824px;
+    height: 100%;
+    float: left;
+}
+div div img{
+    width: 180px;
+    margin-left: 10px;
+}
+.cam_panel{
+    width: 200px;
+    float: left;
+    height: 350px;
+}
+
+.camer{
+    border: 1px solid white;
+    color: white;
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.camer:hover{
+    background-color: white;
+    color: black;
+}
+
+.map{
+    float: left;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.exit{
+    float: left;
+    margin: auto;
+    border: 1px solid white;
+    color: white;
+    width: 100px;
+    margin-top: 10px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+.exit:hover{
+    background-color: white;
+    color: black;
 }
