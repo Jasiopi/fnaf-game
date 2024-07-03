@@ -16,6 +16,31 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: white;
 }
+.end{
+    display: none;
+    margin: auto;
+    width: 1024px;
+    height: 600px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+    padding-top: 200px;
+}
+
+.security_info{
+    display: none;
+    margin: auto;
+    width: 1024px;
+    height: 600px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: white;
+    padding-top: 200px;
+}
 
 .window_cam{
     display: none;
@@ -35,6 +60,12 @@ body {
     float: left;
 }
 
+#door1{
+    width: 250px;
+    height: 100%;
+    margin: 0;
+}
+
 .door:hover {
     background-image: url("img/korytarz1.jpg");
 }
@@ -49,6 +80,63 @@ body {
     float: left;
     height: 188px;
     width: 385px;
+    flex-direction: column;
+    display: flex;
+    padding-left: 250px;
+}
+
+.zegar{
+    color: white;
+    text-align: right;
+    float: right;
+    margin: 10px;
+    border: 2px solid slategrey;
+    background-color: black;
+    font-size:xx-large;
+    margin-top: 20px;
+    display: flex;
+    width: 100px;
+}
+
+.batery{
+    color: white;
+    text-align: right;
+    float: right;
+    margin: 10px;
+    font-size:xx-large;
+    margin-top: 20px;
+    display: flex;
+    width: 100px;
+}
+
+.ring{
+    margin-top: 300px;
+    float: left;
+    width: 177px;
+    height: 109px;
+    background-image: url(img/ring1.png);
+}
+
+.info{
+    margin-top: 300px;
+    float: left;
+    width: 177px;
+    height: 109px;
+    background-image: url(img/doc.png);
+}
+
+.ring:hover{
+    width: 177px;
+    height: 103px;
+    background-image: url(img/ring2.png);
+    margin-top: 306px;
+}
+
+.info:hover{
+    width: 177px;
+    height: 103px;
+    background-image: url(img/doc_open.png);
+    margin-top: 306px;
 }
 
 .computer {
@@ -106,8 +194,30 @@ div div img{
     height: 30px;
     margin-left: 50px;
 }
+.exit_info{
+    float: right;
+    margin: auto;
+    margin-right: 100px;
+    border: 1px solid black;
+    color: black;
+    width: 100px;
+    margin-top: 10px;
+    height: 30px;
+    margin-left: 50px;
+}
 
 .exit:hover{
     background-color: white;
     color: black;
+}
+
+.exit_info:hover{
+    background-color: black;
+    color: white;
+}
+
+#fan{
+    width: 100px;
+    margin-left: 280px;
+    margin-top: 50px;
 }

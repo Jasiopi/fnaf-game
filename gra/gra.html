@@ -10,20 +10,47 @@
 
 <body>
     <div class="window" id="window1">
-        <div class="door"></div>
-        <div class="wall"></div>
-        <div class="wall1"></div>
-        <div class="computer" onclick="monit()"></div>
+        <div class="door">
+            <img src="img/door_fake.png" alt="door" id="door1">
+        </div>
+        <div class="wall">
+            <div>
+                <img src="img/fan.gif" alt="fan" id="fan">
+            </div>
+            <div class="ring" id="ring" onclick="click_ring()"></div>
+            <div class="info" id="info" onclick="info()"></div>
+        </div>
+        <div class="wall1" id="wall1">
+            <div class="zegar" id="zegar_1">00:00</div>
+            <div class="batery" id="zegar_1">
+                <img id="zegar_1_1" src="img/battery1.png" alt="batery">
+            </div>
+        </div>
+        
+        <div class="computer" onclick="monit()" id="computer_1"></div>
+        <audio id="ring_1" src="Szkolny.mp3"></audio>
     </div>
     <div class="window_cam" id="window2">
         
-        <img src="img/hall1.jpg" alt="hall1">
+        <img src="img/hall/hall1.jpg" alt="hall" id="see_hall">
         <div class="cam_panel">
-            <div class="camer">
+            <div class="camer" onclick="change_camer(1)">
                 cam_1
             </div>
-            <div class="camer">
+            <div class="camer" onclick="change_camer(2)">
                 cam_2
+            </div>
+            <div class="camer" onclick="change_camer(3)">
+                cam_3
+            </div>
+            <div class="camer" onclick="change_camer(4)">
+                cam_4
+            </div>
+            <div class="camer" onclick="change_camer(5)">
+                cam_5
+            </div>
+            <div class="camer" onclick="change_camer(6)">
+                cam_6
             </div>
         </div>
         <div class="map">
@@ -33,6 +60,21 @@
             exit
         </div>
         
+    </div>
+    <div class="end" id="window3">
+        <p id="end_1">---</p>
+        <p>thanks for play</p>
+        <p>It is small project do for fun. I'm glad it works and that I finished it at all</p>
+        <audio id="winning" src="img/mixkit-animated-small-group-applause-523.wav"></audio>
+    </div>
+    <div class="security_info" id="window4">
+        <p id="end_1">---</p>
+        <p>responsibilities of a security guard </p>
+        <p>Welcome to your new job. Due to unusual circumstances and research conducted in the basement of the building. You are confined to the facility. Your task is to prevent the test facility from escaping. He won't try to escape if you're in the building, but he will prowl around it to find you. You are given permission to use force, but it is rather useless in a confrontation with the test subject. An effective method of deterring him is the school bell. Use it if you see him nearby. But remember, due to budget cuts, the device's battery has a limited number of uses. The object is afraid of sunlight, so your shift ends in the morning.</p>
+            <p>Good luck</p>
+        <div class="exit_info" onclick="Back_to_room()">
+            back
+        </div>
     </div>
     <audio autoplay loop>
         <source src="lamp-buzz-6132.mp3" type="audio/mpeg">
